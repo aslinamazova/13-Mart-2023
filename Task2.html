@@ -8,19 +8,27 @@
 </head>
 <body>
     <script>
-        var num=257
-        var sum=0
-        sum="3"+num
-
-        console.log(sum)
-
         // var num=257
         // var sum=0
-        // while()
-        // {
+        // sum="3"+num
 
-        // }
+        // console.log(sum)
 
+        var result=257
+        var num=257
+        var count=0
+        var sum=0
+        while(num>0)
+        {
+            num-=num%10
+            num/=10
+            count++
+            
+            sum=result+(3*(10**count))
+            
+        }
+        
+        console.log(sum)
 
 
     </script>
